@@ -12,6 +12,28 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+    implementation group: 'junit', name: 'junit', version: '4.13.1'
+
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.4'
+
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+    annotationProcessor "org.projectlombok:lombok:1.18.12"
+
+    implementation("io.github.bonigarcia:webdrivermanager:4.4.3")
+    implementation("io.github.bonigarcia:selenium-jupiter:3.4.0")
+
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.4'
+    implementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    implementation 'io.cucumber:cucumber-java:4.2.0'
+    testCompile ('org.junit.jupiter:junit-jupiter:5.6.0')
+
 }
 
 test {
