@@ -1,8 +1,10 @@
-base/Browsers.java
- base.Browsers
 runners/TestRunnerComprar.java
  runners.TestRunnerComprar
-runners/TestRunnerLogin.java
- runners.TestRunnerLogin
 runners/TestRunnerCarga.java
  runners.TestRunnerCarga
+runners/TestRunnerLogin.java
+ runners.TestRunnerLogin
+steps/LoginSteps.java
+ steps.LoginSteps
+steps/CargaSteps.java
+ steps.CargaSteps

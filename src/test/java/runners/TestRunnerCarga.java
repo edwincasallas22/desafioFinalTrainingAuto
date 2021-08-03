@@ -1,11 +1,12 @@
 package runners;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "resources/features/carga.feature", glue = "java/steps")
+@CucumberOptions(features = "src/test/resources/features/carga.feature", glue = "steps")
 
 public class TestRunnerCarga {
 }
