@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class DriverController {
 
@@ -22,4 +24,14 @@ public class DriverController {
         return new ChromeDriver(options);
 
     }
+    public static WebDriver getDriverFireFox() {
+
+        WebDriverManager.firefoxdriver().setup();
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("--lang=es");
+        return new FirefoxDriver(options);
+
+    }
+
+
 }

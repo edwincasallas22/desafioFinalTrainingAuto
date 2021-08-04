@@ -3,16 +3,19 @@ package steps;
 import com.co.sofkau.web.controllers.BCSouceDemo;
 import com.co.sofkau.web.controllers.DriverController;
 import com.co.sofkau.web.controllers.CargaSouceDemo;
+import com.co.sofkau.web.controllers.Screenshot;
 import com.co.sofkau.web.datos.DatosBase;
 import com.co.sofkau.web.pages.SouceDemoHomePage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 public class CargaSteps {
@@ -22,6 +25,12 @@ public class CargaSteps {
     public void setUp(){
 
         driver = DriverController.getDriver();
+        driver = DriverController.getDriverFireFox();
+    }
+    @AfterStep
+    public void callScreenshot() throws IOException {
+        Screenshot screenshot = new Screenshot(driver);
+        screenshot.takeScreenshot();
     }
 
     @Given("^un usuario entro a la url de la aplicacion web$")

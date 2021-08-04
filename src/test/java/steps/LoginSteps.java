@@ -2,29 +2,41 @@ package steps;
 
 import com.co.sofkau.web.controllers.BCSouceDemo;
 import com.co.sofkau.web.controllers.DriverController;
-
-
+import com.co.sofkau.web.controllers.Screenshot;
 import com.co.sofkau.web.datos.DatosBase;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.es.Cuando;
-import cucumber.api.java.es.Dado;
-import cucumber.api.java.es.Entonces;
+
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Dado;
+import io.cucumber.java.es.Entonces;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-
+import java.io.IOException;
 import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginSteps {
-
+    private static final Logger Logger = LogManager.getLogger(LoginSteps.class);
     WebDriver driver;
     @Before
     public void setUp(){
 
         driver = DriverController.getDriver();
+        driver = DriverController.getDriverFireFox();
     }
+
+    @AfterStep
+    public void callScreenshot() throws IOException {
+        Screenshot screenshot = new Screenshot(driver);
+        screenshot.takeScreenshot();
+
+    }
+
     @Dado("^un usuario entro a la url de la aplicacion$")
     public void unUsuarioEntroALaUrlDeLaAplicacion() {
         BCSouceDemo.startApp(driver, "https://www.saucedemo.com/");

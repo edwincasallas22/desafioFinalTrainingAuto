@@ -53,6 +53,9 @@ public class SouceDemoHomePage {
     @FindBy(xpath = "//*[@id=\"item_5_title_link\"]/div")
     private WebElement product6;
 
+    @FindBy(xpath = "//*[@id=\"shopping_cart_container\"]/a")
+    private WebElement cartpage;
+
 
     public ArrayList<WebElement> listButton = new ArrayList<>();
 
@@ -101,4 +104,6 @@ public class SouceDemoHomePage {
     public WebElement getLogOut() {
         return logOut;
     }
+
+    public WebElement getCartPage(){return cartpage;}
 }

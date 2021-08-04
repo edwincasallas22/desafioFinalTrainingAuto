@@ -1,15 +1,22 @@
 package com.co.sofkau.web.controllers;
 
 import com.co.sofkau.web.datos.DatosBase;
+
 import com.co.sofkau.web.pages.SouceDemoHomePage;
 import com.co.sofkau.web.pages.SouceDemoLoginPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+
 import java.sql.SQLException;
 
+
 public class BCSouceDemo {
+
 
     public static void startApp(WebDriver driver, String url) {
 
@@ -81,6 +88,7 @@ public class BCSouceDemo {
         SouceDemoLoginPage loginPage = new SouceDemoLoginPage(driver);
         return loginPage.getButtonLogin().getText();
     }
+
 
 
 

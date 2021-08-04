@@ -1,8 +1,5 @@
 Feature: Sección de Cargue de productos
-  As
-  comprador de la tienda
-  I want
-  poder entrar al home principal de la aplicacion y ver los diferentes tipos de articulos puestos en venta
+
 
   Scenario: Verificar ingreso a la URL y Login
     Given un usuario entro a la url de la aplicacion web

@@ -1,10 +1,12 @@
 runners/TestRunnerComprar.java
  runners.TestRunnerComprar
-runners/TestRunnerCarga.java
- runners.TestRunnerCarga
 runners/TestRunnerLogin.java
  runners.TestRunnerLogin
-steps/LoginSteps.java
- steps.LoginSteps
+runners/TestRunnerCarga.java
+ runners.TestRunnerCarga
 steps/CargaSteps.java
  steps.CargaSteps
+steps/LoginSteps.java
+ steps.LoginSteps
+steps/CompraSteps.java
+ steps.CompraSteps

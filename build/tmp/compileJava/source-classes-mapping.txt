@@ -1,18 +1,26 @@
 com/co/sofkau/web/controllers/ConexionBD.java
  com.co.sofkau.web.controllers.ConexionBD
+com/co/sofkau/web/controllers/Screenshot.java
+ com.co.sofkau.web.controllers.Screenshot
 com/co/sofkau/web/controllers/DriverController.java
  com.co.sofkau.web.controllers.DriverController
-com/co/sofkau/web/datos/DatosFaker.java
- com.co.sofkau.web.datos.DatosFaker
-com/co/sofkau/web/datos/DatosBase.java
- com.co.sofkau.web.datos.DatosBase
+com/co/sofkau/web/pages/CheckOutPage.java
+ com.co.sofkau.web.pages.CheckOutPage
 com/co/sofkau/web/pages/SouceDemoLoginPage.java
  com.co.sofkau.web.pages.SouceDemoLoginPage
+com/co/sofkau/web/datos/DatosBase.java
+ com.co.sofkau.web.datos.DatosBase
 com/co/sofkau/web/controllers/BCSouceDemo.java
  com.co.sofkau.web.controllers.BCSouceDemo
-com/co/sofkau/web/controllers/LoadProductsSauceDemo.java
- com.co.sofkau.web.controllers.LoadProductsSauceDemo
 com/co/sofkau/web/pages/SouceDemoHomePage.java
  com.co.sofkau.web.pages.SouceDemoHomePage
 com/co/sofkau/web/controllers/CargaSouceDemo.java
  com.co.sofkau.web.controllers.CargaSouceDemo
+com/co/sofkau/web/pages/SouceDemoYourCartPage.java
+ com.co.sofkau.web.pages.SouceDemoYourCartPage
+com/co/sofkau/web/pages/SouceDemoCheckCompletePage.java
+ com.co.sofkau.web.pages.SouceDemoCheckCompletePage
+com/co/sofkau/web/controllers/CompraSouceDemo.java
+ com.co.sofkau.web.controllers.CompraSouceDemo
+com/co/sofkau/web/pages/SouceDemoCheckOverviewPage.java
+ com.co.sofkau.web.pages.SouceDemoCheckOverviewPage
